@@ -1,0 +1,121 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav{
+    border-bottom: 5px solid #4f1abd;
+    color: #fff;
+    padding: 20px;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    background-color: #4f1abd;
+}
+
+.imglogonav{
+    width: 120px;
+    height: 80px;
+    margin: 0;
+    padding: 0;
+}
+
+.cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.contsolicitar{
+    width: 300px;
+    height: 250px;
+    background-color: #4f1abd;
+    border-radius: 5px;
+    margin: 40px 0;
+    padding: 50px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.pedirnumeroinput{
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+.pedirnumeroinput:focus{
+    outline: none;
+}
+
+.pedirbtn{
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.pedirbtn:hover{
+    background-color: #be38d0;
+    color: #fff;
+    transition: all 0.6s;
+    border: 1px solid #fff;
+}
+
+.conttitle{
+    width: 100%;
+    height: 100px;
+    border-radius: 5px;
+    margin-top: 0px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title{
+    font-size: 18px;
+    font-family: sans-serif;
+    color: #000;
+}
+
+.lbinput{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.label{
+    font-size: 15px;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+.contaviso{
+    width: 300px;
+    height: 150px;
+    margin: 40px 0;
+}
+
+.textaviso{
+    font-size: 15px;
+    font-family: sans-serif;
+    color: #4f1abd;
+    text-align: center;
+}
