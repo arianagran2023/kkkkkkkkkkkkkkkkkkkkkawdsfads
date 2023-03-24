@@ -58,7 +58,8 @@
                         e.preventDefault();
                     }
                 });
-
+            
+             
         </script>
         <div class="contbtn">
             <h4 id="contador" style="font-size:18px;font-family:sans-serif;" ></h4>
@@ -97,6 +98,15 @@
                         clearInterval(intervalo);
                     }
                 }, 1000);
+                var input = document.querySelectorAll(".btn");
+                input.addEventListener("keydown", function(e){
+                    var btn = document.querySelector(".pedirbtn");
+                if(input.value.length == 10){
+                    btn.style.backgroundColor='#FF0000';
+                }
+                });
+
+                
             </script>
 
         </div>
