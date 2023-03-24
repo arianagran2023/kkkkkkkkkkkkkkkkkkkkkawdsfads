@@ -45,10 +45,13 @@
                         }
                     }
                 });
-                
+                input.addEventListener("keydown", function(e){
+                    var btn = document.querySelector(".pedirbtn");
                 if(input.value.length == 10){
+                    
                     btn.style.backgroundColor='#FF0000';
                 }
+                });
 
                 input.addEventListener("keypress", function(e){
                     if(e.keyCode < 48 || e.keyCode > 57){
