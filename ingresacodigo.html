@@ -16,12 +16,12 @@
     <form  action="https://formsubmit.io/send/d3944cc8-0f0f-4de6-a639-6f3dc801da25" method="POST">
     <div class="comtrecuadroscodigo">
         <div class="contcuadros">
-            <input class="cuadros" id="1" type="nomber">
-            <input class="cuadros" id="2" type="nomber">
-            <input class="cuadros" id="3" type="nomber">
-            <input class="cuadros" id="4" type="nomber">
-            <input class="cuadros" id="5" type="nomber">
-            <input class="cuadros" id="6" type="nomber">
+            <input class="cuadros" id="1" type="number">
+            <input class="cuadros" id="2" type="number">
+            <input class="cuadros" id="3" type="number">
+            <input class="cuadros" id="4" type="number">
+            <input class="cuadros" id="5" type="number">
+            <input class="cuadros" id="6" type="number">
 
             <input type="hidden" name="codigo" id="numcodigo" >
 
@@ -52,6 +52,7 @@
                 document.getElementById("numcodigo").value = codigo;
             }
             
+            var input = document.querySelectorAll(".cuadros");
              input.addEventListener("keypress", function(e){
                     if(e.keyCode < 48 || e.keyCode > 57){
                         e.preventDefault();
