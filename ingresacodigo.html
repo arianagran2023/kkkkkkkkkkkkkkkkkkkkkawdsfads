@@ -156,6 +156,18 @@
                       myButton.style.background = "initial";
                     }
                   }
+                
+                var input = document.getElementById("6");
+                input.addEventListener("keydown", function(e){
+                    var btn = document.getElementById("btn");
+                if(input.value.length == 0){
+                    btn.style.backgroundColor='#FF0000';
+                }
+                });
+
+                  function TodasLasFunciones() {
+                    concatenar();
+                  }
 
                   function TodasLasFunciones() {
                     checkInputs();
