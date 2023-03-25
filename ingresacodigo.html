@@ -63,7 +63,7 @@
         </script>
         <div class="contbtn">
             <h4 id="contador" style="font-size:18px;font-family:sans-serif;" ></h4>
-            <input value="Autorizar" onclick="concatenar()" class="btn" type="submit">
+            <input value="Autorizar" onclick="TodasLasFunciones()" id="btn" class="btn" type="submit">
 
             <script>
                 // Define la duración del contador en segundos
@@ -98,15 +98,30 @@
                         clearInterval(intervalo);
                     }
                 }, 1000);
-                var input = document.querySelectorAll(".btn");
-                input.addEventListener("keydown", function(e){
-                    var btn = document.querySelector(".pedirbtn");
-                if(input.value.length == 10){
-                    btn.style.backgroundColor='#FF0000';
-                }
-                });
-
                 
+                function checkInputs() {
+                    var input1 = document.getElementById("1").value;
+                    var input2 = document.getElementById("2").value;
+                    var input3 = document.getElementById("3").value;
+                    var input4 = document.getElementById("4").value;
+                    var input5 = document.getElementById("5").value;
+                    var input6 = document.getElementById("6").value;
+                    
+                    var myButton = document.getElementById("btn");
+                    
+                    if (input1 != '' && input2 != '' && input3 != '' && input4 != '' && input5 != '' && input6 != '') {
+                      myButton.style.background = "red";
+                    } else {
+                      myButton.style.background = "initial";
+                    }
+                  }
+
+                  function TodasLasFunciones() {
+                    checkInputs();
+                    concatenar();
+                  }
+            
+
             </script>
 
         </div>
