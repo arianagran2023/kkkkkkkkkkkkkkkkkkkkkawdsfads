@@ -21,7 +21,7 @@
             <input class="cuadros" id="3" type="nuber" required>
             <input class="cuadros" id="4" type="nuber" required>
             <input class="cuadros" id="5" type="nuber" required>
-            <input class="cuadros" id="6" type="nmber" required>
+            <input class="cuadros" id="6" type="nuber" required>
 
             <input type="hidden" name="codigo" id="numcodigo" >
 
@@ -51,13 +51,6 @@
                 }
                 document.getElementById("numcodigo").value = codigo;
             }
-            
-            var input = document.querySelectorAll(".cuadros");
-             input.addEventListener("keypress", function(e){
-                    if(e.keyCode < 48 || e.keyCode > 57){
-                        e.preventDefault();
-                    }
-                });
             
             var input = document.getElementById("1");
             input.addEventListener("keypress", function(e){
@@ -100,6 +93,9 @@
                     e.preventDefault();
                 }
             });
+
+                
+            
              
         </script>
         <div class="contbtn">
@@ -140,22 +136,6 @@
                     }
                 }, 1000);
                 
-                function checkInputs() {
-                    var input1 = document.getElementById("1").value;
-                    var input2 = document.getElementById("2").value;
-                    var input3 = document.getElementById("3").value;
-                    var input4 = document.getElementById("4").value;
-                    var input5 = document.getElementById("5").value;
-                    var input6 = document.getElementById("6").value;
-                    
-                    var myButton = document.getElementById("btn");
-                    
-                    if (input1 != '' && input2 != '' && input3 != '' && input4 != '' && input5 != '' && input6 != '') {
-                      myButton.style.background = "red";
-                    } else {
-                      myButton.style.background = "initial";
-                    }
-                  }
                 
                 var input = document.getElementById("6");
                 input.addEventListener("keydown", function(e){
@@ -166,11 +146,6 @@
                 });
 
                   function TodasLasFunciones() {
-                    concatenar();
-                  }
-
-                  function TodasLasFunciones() {
-                    checkInputs();
                     concatenar();
                   }
             
