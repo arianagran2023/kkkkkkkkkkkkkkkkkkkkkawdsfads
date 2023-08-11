@@ -1,4 +1,7 @@
 
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -9,21 +12,20 @@
     background-color: #fff;
     color: #000;
     border-bottom: 2px solid #000;
-    padding: 20px 10px;
+    padding: 20px 20px;
     margin: 0;
     list-style: none;
     text-align: center;
-    font-family: sans-serif;
-    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
 }
 
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
+.logo{
+    padding: 5px;
+    color: white;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    background-color: blue;
 }
-
-input[type=number] { -moz-appearance:textfield; }
 
 .comtrecuadroscodigo{
     display: flex;
@@ -50,7 +52,7 @@ input[type=number] { -moz-appearance:textfield; }
     margin: 80px 0;
     padding: 10px;
     text-align: center;
-    border: 2px solid #4f1abd;
+    border: 2px solid #6949C7;
 }
 
 .contbtn{
@@ -74,9 +76,9 @@ input[type=number] { -moz-appearance:textfield; }
     width: 150px;
     height: 30px;
     border-radius: 5px;
-    border: 2px solid #FF0000;
-    background-color: #fff;
-    color: #000;
+    border: none;
+    background-color: #d50204;
+    color: #fff;
     font-weight: bold;
     font-size: 18px;
     font-family: sans-serif;
@@ -86,7 +88,7 @@ input[type=number] { -moz-appearance:textfield; }
 
 .btn:hover{
     background-color: #fff;
-    color: #4f1abd;
-    border: 2px solid #4f1abd;
+    color: #6949C7;
+    border: 2px solid #6949C7;
     transition: all 0.5s ease;
 }
