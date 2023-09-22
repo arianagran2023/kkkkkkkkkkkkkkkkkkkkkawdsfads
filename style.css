@@ -60,6 +60,10 @@
     border: none;
     padding: 5px;
     margin: 10px 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .pedirnumeroinput:focus{
